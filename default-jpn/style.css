@@ -254,3 +254,22 @@ blockquote {
     *zoom: 1;
 }
 
+/* 修正追加
+/*---------------------------------------------*/
+table {
+	margin-bottom: 1em;
+}
+
+th, td {
+	padding-left:  .5em;
+	padding-right: .5em;
+}
+
+th {
+	font-weight: bold;
+}
+
+hr {
+	margin-top:    1.5em;
+	margin-bottom: 1.5em;
+}
