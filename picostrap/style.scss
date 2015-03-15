@@ -1,0 +1,134 @@
+/* Ellinkonblue.com/.net Pico Theme "picostrap"
+ * powered by Bootstrap
+ * Feb 19th, 2015 KAWANISHI Kazuhiro
+ */
+@charset "UTF-8";
+@import "compass";
+@import "./common";  // _common.scss  from common-scss https://github.com/ellinikonblue/common-scss
+@import "./pantone"; // _pantone.scss from common-scss https://github.com/ellinikonblue/common-scss
+
+$line_height: 24px;
+
+/* 共通
+ */
+body {
+  color: $black;
+  background: $white;
+  font-family: 'Open Sans', $sans_serif_Helvetica;
+}
+
+a {
+ &:hover, &:active {
+   text-decoration: none;
+ }
+}
+
+/* ヘッダー部分
+ */
+#header {
+  color: $white;
+  background: $Hemlock;
+
+  padding: 5em 0;
+
+  h1 {
+    font-weight: bold;
+  }
+  a {
+    @include unstyled-link;
+  }
+}
+
+/* コンテンツ本体部分
+ */
+#content {
+  line-height: $line_height;
+
+  padding: 3em 0;
+
+  h1 { font-size: 28px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 16px; }
+  h5 { font-size: 14px; }
+  h6 { font-size: 12px; }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top:    1em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  table {
+    margin-bottom: 1em;
+  }
+
+  th,td {
+    padding-left:  10px;
+    padding-right: 10px;
+  }
+
+  ul {
+    line-height: $line_height;
+  }
+
+  hr {
+    margin-top:    1.5em;
+    margin-bottom: 1.5em;
+  }
+}
+
+/* サイドバー部分
+ */
+#aside {
+  h3 {
+    padding: 0 5px;
+    border-bottom: solid 1px $Paloma;
+  }
+}
+
+/* フッター部分
+ */
+#footer {
+  color: $silver;
+  background: $Paloma;
+
+  padding: 5em 0;
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+/* その他
+ */
+#FadeScrollBtn {
+  font-size: 24px;
+  color: $white;
+  background: $Hemlock;
+  line-height: 64px;
+  text-align: center;
+
+  height: 64px;
+  width:  64px;
+
+  @include border-radius( 50% );
+  border: solid 5px $white;
+
+  @include box-shadow( $gray 2px 2px 3px );
+
+  position: fixed;
+  bottom: 20px;
+  right:  20px;
+
+  a {
+    @include unstyled-link;
+  }
+}

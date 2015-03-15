@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="{{ theme_url }}/style.css" type="text/css" />
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Animatescroll.js from http://plugins.compzets.com/animatescroll/ -->
+  <script type="text/javascript" src="/javascript/lib/animatescroll/animatescroll.js"></script>
+  <!-- jQuerySnippet.js from https://github.com/ellinikonblue/JavaScript -->
+  <script type="text/javascript" src="/javascript/jQuerySnippet.js"></script>
+</head>
+
+<body id="pagetop">
+
+  <header id="header">
+    <div class="container">
+      <h1><a href="{{ base_url }}">{{ site_title }}</a></h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <section id="content" class="row">
+      <article class="col-md-8">
+        {{ content }}
+      </article>
+
+      <aside id="aside" class="col-md-4 hidden-xs hidden-sm">
+        <!-- for Side Navigation Space-->
+      </aside>
+    </section>
+  </div>
+
+  <footer id="footer">
+    <div class="container">
+      powered by <a href="http://pico.dev7studios.com">Pico</a>
+      was made by <a href="http://gilbert.pellegrom.me">Gilbert Pellegrom</a>
+      from <a href="http://dev7studios.com">Dev7studios</a>.
+    </div>
+  </footer>
+
+  <div id="FadeScrollBtn">
+    <a onclick="$('#pagetop').animatescroll({scrollSpeed:2000,easing:'easeOutCubic'});"><span
+      class="glyphicon glyphicon-hand-up"></span></a>
+  </div>
+
+</body>
+</html>
